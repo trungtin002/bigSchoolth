@@ -20,10 +20,10 @@ namespace bigSchool.Controllers
             _dbContext = new ApplicationDbContext();
         }
         //de goi ra
-    
-      
+
+
         [HttpPost]
-        public  IHttpActionResult Attend(AttendanceDto attendanceDto)
+        public IHttpActionResult Attend(AttendanceDto attendanceDto)
         {
             var userId = User.Identity.GetUserId();
             if (_dbContext.Attendances.Any(a => a.AttendeeId == userId && a.CourseId == attendanceDto.CourseId))

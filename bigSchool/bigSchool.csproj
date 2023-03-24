@@ -181,9 +181,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -206,6 +208,10 @@
     <Compile Include="Migrations\202303230135258_AddAttendance.cs" />
     <Compile Include="Migrations\202303230135258_AddAttendance.designer.cs">
       <DependentUpon>202303230135258_AddAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303231643025_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\202303231643025_AddFollowingsTable.designer.cs">
+      <DependentUpon>202303231643025_AddFollowingsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -283,6 +289,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Attendances\" />
+    <Folder Include="Views\Followings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -312,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303230135258_AddAttendance.resx">
       <DependentUpon>202303230135258_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303231643025_AddFollowingsTable.resx">
+      <DependentUpon>202303231643025_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
