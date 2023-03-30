@@ -9,7 +9,7 @@ namespace bigSchool.Models
 {
     public class Following
     {
-
+        public Course Course { get; set; }
         [Key]
         [Column(Order = 1)]
         public string FollowerId { get; set; }
